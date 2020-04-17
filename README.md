@@ -41,11 +41,12 @@ Save this as `.atom-build.yml`, and build(<kbd>ctrl</kbd>+<kbd>Alt</kbd>+<kbd>b<
 ## compile
 
 Before compile,please make sure [Go](https://github.com/golang/go) environment installed
-for linux plateform:
+
+for linux platform:
 
     make build4linux
 
-for windows plateform:
+for windows platform:
 
     make build4windows
 
