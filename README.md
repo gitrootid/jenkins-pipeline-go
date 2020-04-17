@@ -1,6 +1,6 @@
 # jenkins-pipeline
 
-Execute groovy pipeline code in remote jenkins server and monitor the output in client console(I prefer [Atom](https://atom.io/) editor).
+Execute groovy pipeline code on remote jenkins server and monitor the output with client console(I prefer [Atom](https://atom.io/) editor).
 
 ![jenkins-pipeline](https://github.com/gitrootid/jenkins-pipeline-go/blob/master/help/atom-preview.png?raw=true)
 
