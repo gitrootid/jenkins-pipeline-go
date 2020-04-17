@@ -150,18 +150,16 @@ func (h *HttpClient) GetBuildStatus(currentBuildId string) {
 		if HandlerStatusCode(resp.StatusCode()) {
 			err = json.Unmarshal(resp.Body(), resultApi)
 			HandlerErr(err)
-			response, err := h.Client.R().Post(h.Url + h.Job + "/" + currentBuildId + "/consoleText")
-			resp, err = response, err
+			resp, err = h.Client.R().Post(h.Url + h.Job + "/" + currentBuildId + "/consoleText")
 			HandlerErr(err)
 			if textSize == 0 {
 				fmt.Print("\n")
-				log.Print("output consoleText:")
 			}
 			fmt.Print(string(resp.Body()[textSize:]))
-			textSize = resp.Size()
 			if (resp.Size() == textSize) && (resultApi.Building == false) {
 				break
 			}
+			textSize = resp.Size()
 			time.Sleep(1 * time.Second)
 			continue
 		}
