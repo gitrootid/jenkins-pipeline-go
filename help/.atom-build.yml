@@ -1,0 +1,9 @@
+cmd: "jenkins-pipeline-go"
+args:
+- "-file {FILE_ACTIVE}"
+- "-job /job/test_pipeline"
+- "-template ~/Documents/config.xml.template"
+- "-url http://127.0.0.1:8080"
+- "-username admin"
+- "-api-token 11481110a5111de08123a83fd11124c6fb"
+sh: true
