@@ -36,11 +36,14 @@ Save this as `.atom-build.yml`, and build(<kbd>ctrl</kbd>+<kbd>Alt</kbd>+<kbd>b<
       - "-job /job/test-pipeline"
       - "-username admin"
       - "-api-token 11111460a1115de06456a83ed16822c8eb"
+      - "-template ~/config.xml.template"
     sh: true
 
 ## Compile
 
 Before compile,please make sure [Go](https://github.com/golang/go) environment installed
+
+    go mod download
 
 for linux platform:
 
