@@ -38,7 +38,7 @@ Save this as `.atom-build.yml`, and build(<kbd>ctrl</kbd>+<kbd>Alt</kbd>+<kbd>b<
       - "-api-token 11111460a1115de06456a83ed16822c8eb"
     sh: true
 
-## compile
+## Compile
 
 Before compile,please make sure [Go](https://github.com/golang/go) environment installed
 
